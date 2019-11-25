@@ -27,9 +27,12 @@
 
 #ifdef _SLAB_USE_RCPP_AS_WRAP
 #include <RcppCommon.h>
+#include "slab/matrix/matrix.h"
+#include <Rcpp.h>
+#else
+#include "slab/matrix/matrix.h"
 #endif
 
-#include "slab/matrix/matrix.h"
 #include "slab/matrix/matrix_ops.h"
 #include "slab/matrix/packed_matrix.h"
 
@@ -40,14 +43,8 @@
 #include "slab/matrix/blas_interface.h"
 #endif
 
-#define _SLAB_USE_NO_LAPACK
-
 #ifndef _SLAB_USE_NO_LAPACK
 #include "slab/matrix/lapack_interface.h"
-#endif
-
-#ifdef _SLAB_USE_RCPP_AS_WRAP
-#include <Rcpp.h>
 #endif
 
 #endif  // _SLAB_MATRIX_H
