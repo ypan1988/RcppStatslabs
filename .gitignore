@@ -1,0 +1,15 @@
+*~
+.DS_store
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+src/*.o
+src/*.so
+src/*.dll
+vignettes/*.bbl
+vignettes/*.blg
+vignettes/*.log
+vignettes/*.pdf
+vignettes/*.tex
+RcppStatslabs.Rproj
